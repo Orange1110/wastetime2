@@ -46,13 +46,13 @@ def Question():
     result =""
 
     if request.method == "POST":
-        keyword = request.form["keyword"]
+        keywords = request.form["keywords"]
 
         collection_ref = db.collection("item")
         docs = collection_ref.get()
         for doc in docs:
             dict = doc.to_dict()
-            if keyword in dict["Answer"]:
+            if keywords in dict["Answer"]:
                 result = "回答正確"
 
         if result == "":
