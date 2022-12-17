@@ -41,7 +41,7 @@ def item():
         return render_template("item.html")
 
 @app.route("/Question",methods=["GET", "POST"])
-def QA():
+def Question():
 
     result =""
 
