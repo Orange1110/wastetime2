@@ -36,7 +36,7 @@ def item():
 
         if result == "":
             result = "是怎樣?皮啊?給我重輸"
-        return  result + render_template("item.html")
+        return  result + render_template("Question.html")
     else:
         return render_template("item.html")
 
