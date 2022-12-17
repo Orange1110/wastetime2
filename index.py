@@ -36,7 +36,7 @@ def item():
 
         if result == "":
             result = "是怎樣?皮啊?給我重輸"
-        return  redirect('/Question/') + result
+        return  result
     else:
         return render_template("item.html")
 
